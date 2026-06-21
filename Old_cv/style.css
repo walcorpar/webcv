@@ -1,0 +1,84 @@
+body{
+  padding: 25px;
+  background-color: black;
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+/* --- 1. ENCABEZADO --- */
+.header-cv {
+    background-color: #343a40;
+    color: white;
+    padding: 3rem 0;
+    border-bottom: 5px solid #007bff;
+}
+
+/* --- 2. SECCIONES GENERALES --- */
+.section-heading {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+/* --- 3. TIMELINE (EXPERIENCIA LABORAL) --- */
+.timeline {
+    position: relative;
+    padding-left: 50px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    width: 3px;
+    background-color: #007bff;
+    z-index: 1;
+}
+
+/* Contenedor de cada experiencia */
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/* Círculo/Punto de cada item */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -32px;
+    width: 16px;
+    height: 16px;
+    background-color: #007bff;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.job-card {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* --- 4. SKILLS --- */
+.skill-badge {
+    margin: 5px 5px 5px 0;
+    font-size: 0.9em;
+    padding: 0.5em 0.8em;
+    display: inline-block;
+}
+
+.badge-primary {
+    background-color: #007bff; /* MongoDB, PostgreSQL, Redis */
+}
+
+.badge-dark {
+    background-color: #343a40; /* SQL Server, Sybase, DB2 */
+}
+
+.badge-success {
+    background-color: #28a745; /* AWS Cloud */
+}
